@@ -1,2 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace CSharp
+{
+    class Program
+    {
+        public static void Main(String[] args){
+            DataTypes.Task4ABJKL.Run();
+        }
+    }
+}
