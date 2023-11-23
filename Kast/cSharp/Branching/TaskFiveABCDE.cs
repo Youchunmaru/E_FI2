@@ -3,17 +3,23 @@ namespace Branching {
     class TaskFiveABCDE {
         
     public static void Run(){
-        FiveAB();
+        FiveA();
+        FiveB();
         FiveC();
         FiveD();
         FiveE();
     }
 
-    private static void FiveAB(){
+    private static void FiveA(){
         int firstNumber = Reader.NumericLRead<int>("Enter first number:");
         int secondNumber = Reader.NumericLRead<int>("Enter second Number:");
-        Console.WriteLine(firstNumber > secondNumber ? firstNumber + " > " + secondNumber :
-         firstNumber + " < " + secondNumber);
+        Console.WriteLine(firstNumber > secondNumber ? $"{firstNumber} > {secondNumber}" :
+         $"{firstNumber} < {secondNumber}");
+    }
+
+    private static void FiveB(){
+        int firstNumber = Reader.NumericLRead<int>("Enter first number:");
+        int secondNumber = Reader.NumericLRead<int>("Enter second Number:");
         Console.WriteLine(firstNumber == secondNumber ? "equals" : "!equals");
     }
 
@@ -42,12 +48,12 @@ namespace Branching {
         double price = Reader.NumericLRead<double>("Enter price: ");
         String isMember = Reader.Read("Is Member? (y/n): ");
         if(isMember.ToLower().Equals("y")){
-            Console.WriteLine("price is: {0:0.00}",price*0.95);
+            Console.WriteLine($"price is: {price*0.95:0.00}");
         }else if (isMember.ToLower().Equals("n")){
-            Console.WriteLine("price is: {0:0.00}", price);
+            Console.WriteLine($"price is: {price:0.00}");
         }else {
             Console.WriteLine("Couldnt read answer! Applaying normal status!");
-            Console.WriteLine("price is: {0:0.00}",price);
+            Console.WriteLine($"price is: {price:0.00}");
         }
     }
     }

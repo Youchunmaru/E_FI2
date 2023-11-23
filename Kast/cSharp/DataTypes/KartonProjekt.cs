@@ -2,7 +2,7 @@ using Util;
 namespace DataTypes {
 public class KartonProjekt {
 
-    public static void Main(String[] args){
+    public static void Run(){
         //Karton input bcd
         Console.WriteLine("Please enter Karton dimensons: ");
         float lenght = Reader.NumericLRead<float>("length: ");
