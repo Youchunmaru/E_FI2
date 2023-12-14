@@ -2,6 +2,7 @@ using Util;
 namespace DataTypes{
     class Task4ABJKL{
         public static void RunAll(){
+            Console.WriteLine("---DataTypes: Task 4ABJKL---");
             Run();
             Console.WriteLine(
                 "-------------------------------------------------------------------------------------\n" +
@@ -78,7 +79,7 @@ namespace DataTypes{
         }
 
         private static void FourB_(){
-            double radius = Reader.NumericLRead<double>("Please enter the radius ( x.xx ): ");
+            double radius = Reader.TryNumericRead<double>("Please enter the radius ( x.xx ): ");
             Console.WriteLine("A circle with radius {0:0.00} has: \n" + 
                               "circumfrence: {1:0.00}\n" + 
                               "area: {2:0.00}", 
@@ -88,12 +89,12 @@ namespace DataTypes{
         }
 
         private static void FourJ_(){
-            int speed = Reader.NumericLRead<int>("Please enter your speed: ");
+            int speed = Reader.TryNumericRead<int>("Please enter your speed: ");
             Console.WriteLine("The minmum distance at {0}km/h is {1}m", speed, speed / 2);
         }
 
         private static void FourK_(){
-            int speed = Reader.NumericLRead<int>("Please enter your speed: ");
+            int speed = Reader.TryNumericRead<int>("Please enter your speed: ");
             double reactionDistance = speed * 3.0 / 10.0;
             double breakingDistance = Math.Pow(speed / 10, 2);
             Console.WriteLine("The minmum distance at {0}km/h is {1}m", speed, speed / 2);

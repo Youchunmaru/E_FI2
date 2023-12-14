@@ -1,7 +1,8 @@
 using Util;
 namespace Loops{
     class Task6CDEF{
-        public static void Run(){
+        public static void RunAll(){
+            Console.WriteLine("---Loops: Task 6CDEF---");
             TaskC();
             TaskD();
             TaskE();

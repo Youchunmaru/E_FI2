@@ -3,9 +3,17 @@ using Util;
 namespace Branching{
     class TaskFiveFGH{
 
-    
+        
+        public static void RunAll(){
+            Console.WriteLine("---Branching: Task 5FGH");
+            FiveF();
+            FiveH();
+            new Calculator().Calculate<int>();
+            new Calculator().CalculateText<int>();
+        }
+
         private static void FiveF(){
-            Console.WriteLine( Reader.NumericLRead<int>("Enter number: ") % 2 == 0 ? "even" : "uneven");
+            Console.WriteLine( Reader.TryNumericRead<int>("Enter number: ") % 2 == 0 ? "even" : "uneven");
         }
 
         private static void FiveH(){
@@ -21,7 +29,7 @@ namespace Branching{
             "3: yard\n" + 
             "4: mile\n");
             String number = Reader.Read("Enter conversion number: ");
-            double value = Reader.NumericLRead<double>("Enter imperial value: ");
+            double value = Reader.TryNumericRead<double>("Enter imperial value: ");
             switch(number){
                 case "1":
                     Console.WriteLine($"{value} inch are {value*inch:0.000}m");
@@ -49,9 +57,9 @@ namespace Branching{
 
             //generic solution
             public void Calculate<T>() where T:INumber<T>{
-                T first = Reader.NumericLRead<T>("Enter first number ("+typeof(T)+"): ");
+                T first = Reader.TryNumericRead<T>("Enter first number ("+typeof(T)+"): ");
                 String symbol = Reader.Read("Enter Operator ( + | - | * | / ): ");
-                T second = Reader.NumericLRead<T>("Enter second number ("+typeof(T)+"): ");
+                T second = Reader.TryNumericRead<T>("Enter second number ("+typeof(T)+"): ");
                 
                 switch(symbol){
                     case plus:

@@ -1,7 +1,8 @@
 using Util;
 namespace Loops{
     class Task6AB{
-        public static void Run(){
+        public static void RunAll(){
+            Console.WriteLine("---Loops: Task 6AB---");
             Task6A();
         }
 

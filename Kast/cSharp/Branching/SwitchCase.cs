@@ -1,7 +1,8 @@
 using Util;
 namespace Branching{
     class SwitchCase{
-        public static void Run(){
+        public static void RunAll(){
+            Console.WriteLine("---Branching: Switch Case---");
             SwitchCaseGetränkeautomaten();
             Task3A();
             Task3B();
@@ -120,14 +121,14 @@ namespace Branching{
         }
         public void Buy(){
             PrintSelection();
-            double price = GetPrice(Reader.NumericLRead<int>("Enter Product number: "));
+            double price = GetPrice(Reader.TryNumericRead<int>("Enter Product number: "));
             if (price < 0)
             {
                 Console.WriteLine("Invalid Option!");
                 return;
             }
             Console.WriteLine($"Please insert {price:0.00}€");
-            double insert = Reader.NumericLRead<double>(": ");
+            double insert = Reader.TryNumericRead<double>(": ");
             double returnAmount = insert - price;
             if (returnAmount >= 0)
             {
@@ -148,7 +149,11 @@ namespace Branching{
             }
             return selection.GetV(input);
         }
-
+        /// <summary>
+        /// custom data list class
+        /// </summary>
+        /// <typeparam name="N">name</typeparam>
+        /// <typeparam name="V">value</typeparam>
         private class Selection<N,V> {
             Dictionary<int,N> nD = new Dictionary<int, N>();
             Dictionary<int,V> vD = new Dictionary<int, V>();

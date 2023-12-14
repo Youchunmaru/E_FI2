@@ -1,4 +1,6 @@
-﻿namespace CSharp
+﻿using System.Text;
+
+namespace CSharp
 {
     class Program
     {
@@ -7,9 +9,10 @@
             //Branching.SwitchCase.Run();
             //Loops.Task6AB.Run();
             //Loops.Task6CDEF.Run();
-            Loops.Task6G.Run();
+            //Loops.Task6G.Run();
             //Loops.Task6H.Run();
-            Loops.Task6I.Run();
+            //Loops.Task6I.Run();
+            //Loops.Extra.Run();
         }
     }
 }
