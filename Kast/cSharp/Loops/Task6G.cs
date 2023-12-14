@@ -2,7 +2,8 @@ using Util;
 namespace Loops{
     class Task6G{
         
-        public static void Run(){
+        public static void RunAll(){
+            Console.WriteLine("---Loops: Task 6G---");
             Task1To4();
             Task5To6();
         }
@@ -30,9 +31,9 @@ namespace Loops{
         }
         public static void Task5To6(){
             do{
-                int area = Reader.NumericLRead<int>("Enter area (9/99/999): ");
-                int numberOne = Reader.NumericLRead<int>("Enter Number for player one: ");
-                int numberTwo = Reader.NumericLRead<int>("Enter Number for player two: ");
+                int area = Reader.TryNumericRead<int>("Enter area (9/99/999): ");
+                int numberOne = Reader.TryNumericRead<int>("Enter Number for player one: ");
+                int numberTwo = Reader.TryNumericRead<int>("Enter Number for player two: ");
                 Console.WriteLine($"Zahlenraten\nFinde die Zahl von 1 bis {area}!");
                 int countOne = 1;
                 int countTwo = 1;

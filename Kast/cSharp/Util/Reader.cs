@@ -12,7 +12,7 @@ namespace Util
 </summary>
 <remarks>
     Author: Samuel Gröner \
-    Version: 1.0.2311
+    Version: 1.0.2311-2
 </remarks>
 */
 static class Reader{
@@ -71,13 +71,13 @@ static class Reader{
     <returns> parsed input</returns>
     <remarks>Handles non <see cref="INumber"/> conform inputs by recursev return.</remarks>
     */
-    public static T NumericLRead<T>() where T: INumber<T>{
-        try {
-            return T.Parse(Read(),null);
-        }catch (Exception){
+    public static T TryNumericRead<T>() where T: INumber<T>{
+        T t = T.Zero;
+        while (!T.TryParse(Read(), null, out t))
+        {
             Console.WriteLine("\nERROR: Coudnt parse literal! (Exit with ctrl + c)\n");
-            return NumericLRead<T>();
         }
+        return t;
     }
     /**
     <summary>
@@ -89,8 +89,8 @@ static class Reader{
     <returns> parsed input</returns>
     <remarks>Handles non <see cref="INumber"/> conform inputs by recursev return.</remarks>
     */
-    public static T NumericLRead<T>(String msg) where T: INumber<T> {
-        return MsgPrinter<T>(msg,NumericLRead<T>);
+    public static T TryNumericRead<T>(String msg) where T: INumber<T> {
+        return MsgPrinter<T>(msg,TryNumericRead<T>);
     }
     /**
     <summary>
@@ -118,7 +118,7 @@ static class Reader{
     public static T[] NumericMultiRead<T>(params String[] msgs) where T: INumber<T>{
         T[] inputs = new T[msgs.Length];
         for (int i = 0; i < msgs.Length; i++){
-            inputs[i] = NumericLRead<T>(msgs[i]);
+            inputs[i] = TryNumericRead<T>(msgs[i]);
         }
         return inputs;
     }

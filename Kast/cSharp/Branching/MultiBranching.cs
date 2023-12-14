@@ -3,15 +3,17 @@ namespace Branching
 {
     class MultiBranching
     {
-        public static void Run(){
-            One();
-            Two();
+        public static void RunAll(){
+            Console.WriteLine("---Branching: Multi Branching---");
             //Three @see Switches.cs
-
+            Console.WriteLine("---alternative solutions---");
+            One_();
+            Two_();
+            Four_();
         }
         
-        private static void One(){
-            int number = Reader.NumericLRead<int>("Insert Number from 1 - 5: ");
+        private static void One_(){
+            int number = Reader.TryNumericRead<int>("Insert Number from 1 - 5: ");
             Dictionary<int,String> sRep = new Dictionary<int, string>(){
                 {1,"one"},
                 {2,"two"},
@@ -22,7 +24,7 @@ namespace Branching
             Console.WriteLine("You entered the number {0}!", sRep.GetValueOrDefault(number,"ERROR!"));
         }
 
-        private static void Two(){
+        private static void Two_(){
             Dictionary<int,Func<int,double>> pricing = new Dictionary<int, Func<int, double>>
             {
                 { 199, (x) => x * 0.06 },
@@ -32,7 +34,7 @@ namespace Branching
             };
             Dictionary<int,Func<int,double>>.KeyCollection bounds = pricing.Keys;
 
-            int copys = Reader.NumericLRead<int>("Enter number of copys: ");
+            int copys = Reader.TryNumericRead<int>("Enter number of copys: ");
             foreach(int bound in bounds){
                 if (bound < copys){
                     Console.WriteLine("Pice per copy: {0:0.00}",pricing.GetValueOrDefault(bound,(x)=>-1)(1));
@@ -41,8 +43,8 @@ namespace Branching
                 }
             }
         }
-        private static void Four(){
-            int number = Reader.NumericLRead<int>("Insert Number from 1 - 5: ");
+        private static void Four_(){
+            int number = Reader.TryNumericRead<int>("Insert Number from 1 - 5: ");
             Dictionary<int,String> sRep = new Dictionary<int, string>(){
                 {1,"Schal rot, 10 €"},
                 {2,"Schal gelb, 8 €"},

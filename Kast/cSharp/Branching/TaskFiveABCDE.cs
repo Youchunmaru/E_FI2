@@ -2,7 +2,8 @@ using Util;
 namespace Branching {
     class TaskFiveABCDE {
         
-    public static void Run(){
+    public static void RunAll(){
+        Console.WriteLine("---Branching: Task 5ABCDE---");
         FiveA();
         FiveB();
         FiveC();
@@ -11,23 +12,23 @@ namespace Branching {
     }
 
     private static void FiveA(){
-        int firstNumber = Reader.NumericLRead<int>("Enter first number:");
-        int secondNumber = Reader.NumericLRead<int>("Enter second Number:");
+        int firstNumber = Reader.TryNumericRead<int>("Enter first number:");
+        int secondNumber = Reader.TryNumericRead<int>("Enter second Number:");
         Console.WriteLine(firstNumber > secondNumber ? $"{firstNumber} > {secondNumber}" :
          $"{firstNumber} < {secondNumber}");
     }
 
     private static void FiveB(){
-        int firstNumber = Reader.NumericLRead<int>("Enter first number:");
-        int secondNumber = Reader.NumericLRead<int>("Enter second Number:");
+        int firstNumber = Reader.TryNumericRead<int>("Enter first number:");
+        int secondNumber = Reader.TryNumericRead<int>("Enter second Number:");
         Console.WriteLine(firstNumber == secondNumber ? "equals" : "!equals");
     }
 
     private static void FiveC(){
         Console.WriteLine("Enter school marks:");
-        double math = Reader.NumericLRead<double>("math: ");
-        double german = Reader.NumericLRead<double>("german: ");
-        double physik = Reader.NumericLRead<double>("physik: ");
+        double math = Reader.TryNumericRead<double>("math: ");
+        double german = Reader.TryNumericRead<double>("german: ");
+        double physik = Reader.TryNumericRead<double>("physik: ");
 
         double mark = (math + german + physik)/3.0;
         if(math >= 6 || german >= 6){
@@ -40,12 +41,12 @@ namespace Branching {
     }
 
     private static void FiveD(){
-        int number = Reader.NumericLRead<int>("Enter number:");
+        int number = Reader.TryNumericRead<int>("Enter number:");
         Console.WriteLine(number >= 0 ? number : -number);
     }
 
     private static void FiveE(){
-        double price = Reader.NumericLRead<double>("Enter price: ");
+        double price = Reader.TryNumericRead<double>("Enter price: ");
         String isMember = Reader.Read("Is Member? (y/n): ");
         if(isMember.ToLower().Equals("y")){
             Console.WriteLine($"price is: {price*0.95:0.00}");

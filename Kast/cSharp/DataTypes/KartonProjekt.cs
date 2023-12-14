@@ -2,12 +2,13 @@ using Util;
 namespace DataTypes {
 public class KartonProjekt {
 
-    public static void Run(){
+    public static void RunAll(){
+        Console.WriteLine("---DataTypes: Karton Project---");
         //Karton input bcd
         Console.WriteLine("Please enter Karton dimensons: ");
-        float lenght = Reader.NumericLRead<float>("length: ");
-        float width = Reader.NumericLRead<float>("width: ");
-        float hight = Reader.NumericLRead<float>("hight: ");
+        float lenght = Reader.TryNumericRead<float>("length: ");
+        float width = Reader.TryNumericRead<float>("width: ");
+        float hight = Reader.TryNumericRead<float>("hight: ");
         
         Karton karton = new Karton(lenght, width, hight);
         Console.WriteLine(karton);
@@ -16,7 +17,7 @@ public class KartonProjekt {
         String firstName = "Max";
         String lastName = "Mustermann";
         Console.WriteLine("Please enter Person data: ");
-        int age = Reader.NumericLRead<int>("age: ");
+        int age = Reader.TryNumericRead<int>("age: ");
         String adress = Reader.Read("adress: ");
 
         Person person = new Person(firstName,lastName,age,adress);
