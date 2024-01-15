@@ -2,8 +2,12 @@ using Util;
 namespace DataTypes {
 public class KartonProjekt {
 
+    /// <summary>
+    /// todo write a simplified version
+    /// </summary>
     public static void RunAll(){
         Console.WriteLine("---DataTypes: Karton Project---");
+        Console.WriteLine("---Alternative Solution---");
         //Karton input bcd
         Console.WriteLine("Please enter Karton dimensons: ");
         float lenght = Reader.TryNumericRead<float>("length: ");

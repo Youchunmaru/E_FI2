@@ -29,7 +29,7 @@ namespace Loops
             }
         }
 
-        private static void TaskOneBC(){//todo make better
+        private static void TaskOneBC(){
             int simulations = Reader.TryNumericRead<int>("Enter number of simulations: ");
             double[] average = new double[52];
             average[0] = 220;
@@ -43,7 +43,7 @@ namespace Loops
                 int year = 2009;
                 while (year < 2060)
                 {
-                    growth[count] = growth[count - 1] * (1 + ((random.NextDouble()*7-2.5)/100));// creates a factor between 1.025 - 1.045
+                    growth[count] = growth[count - 1] * (1 + ((random.NextDouble()*7-2.5)/100));// creates a factor between 0.975 - 1.045
                     average[count] += growth[count];
                     year++;
                     count++;
