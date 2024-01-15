@@ -7,9 +7,8 @@ namespace Arrays{
 
         private static void Task(){
             int[] ints = new int[10];
-            int start = 50;
-            for(int i = 0; i < 10; i++){
-                ints[i] = start++;
+            for(int i = 50; i < 60; i++){
+                ints[i] = i++;
             }
             foreach(int val in ints){
                 Console.WriteLine(val);
