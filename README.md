@@ -1,3 +1,5 @@
 # E_FI2
-ToDo: write a README
-@see [cSharp](Kast/cSharp)
+In here you will find all the software specific solutions and documentation for school.
+
+## L58
+[cSharp](L58/cSharp)
