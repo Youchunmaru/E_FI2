@@ -34,4 +34,5 @@ Inside Method
 ```
 ## LINKS
 [wiki](https://en.wikipedia.org/wiki/Function_(computer_programming))
+
 [c# documentation](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/local-functions)

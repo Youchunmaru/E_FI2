@@ -1,4 +1,4 @@
-# Kast - cSharp
+# L58 - cSharp
 
 You will find here the solutions for all coding tasks. The folders are named after the sections in moodle.
 There can be an alternative solution for every task. The alternative solution isn't neccesarely better, faster or more complex.
@@ -11,11 +11,19 @@ It is only there to provide more insight into c#.
     - [Lambdas](#lambdas)
     - [Conditional Operator](#conditional-operator)
     - [OOP](#object-oriented-programming)
+    - [DataTypes](#datatypes)
+    - [For](#for)
+    - [If](#if)
+    - [Stream](#stream)
+    - [Switch](#switch)
+    - [Try](#try)
+    - [While](#while)
 - [Task List](#task-list)
     - [Data Types](#datatypes)
     - [Branching](#branching)
     - [Loops](#loops)
     - [Arrays](#arrays)
+    - [String Operations](#string-operations)
 
 ## Running the task sheets
 ```cs
@@ -75,6 +83,56 @@ class Box{
     }
 }
 ```
+### [DataTypes](Concepts/DataTypes.md)
+```cs
+int number = 1;
+String word = "letters";
+bool condition = true;
+```
+### [For](Concepts/For.md)
+```cs
+for(int i = 0; i < size; i++){
+    //do something
+}
+```
+### [If](Concepts/If.md)
+```cs
+if(condition){
+    //do something
+}else{
+    //do somethin else
+}
+```
+### [Stream](Concepts/Stream.md)
+```cs
+/*
+todo extension functions
+*/
+```
+### [Switch](Concepts/Switch.md)
+```cs
+switch(variable) {
+    case 1:
+        //do something
+        break;
+     default:
+        //default
+}
+```
+### [Try](Concepts/Try.md)
+```cs
+try{
+    //throws error
+}catch(Exception e){
+    e.PrintStackTrace();
+}
+```
+### [While](Concepts/While.md)
+```cs
+while(condition){
+    //do something
+}
+```
 ## Task List
 
 ### DataTypes
@@ -126,3 +184,9 @@ class Box{
 [Arrays - 1a](Arrays/Task1G.cs)
 
 [Arrays - 1a](Arrays/Task1H.cs)
+
+### String Operations
+
+[AB01](StringOperations/AB01.cs)
+
+[ExamTasks](StringOperations/ExamTasks.cs)
