@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using System.Linq;
+using System.Text;
+using Util;
 
 namespace CSharp
 {
@@ -28,7 +30,13 @@ namespace CSharp
             //Arrays.Task1E.RunAll();
             //Arrays.Task1F.RunAll();
             //Arrays.Task1G.RunAll();
-            Arrays.Task1H.RunAll();
+            //Arrays.Task1H.RunAll();
+            //LEK.One.RunAll();
+            //LEK.Two.RunAll();
+            //LEK.Three.RunAll();
+            //ExtraTaskSolutions.Sokoban.Run_();
+            //StringOperations.ExamTasks.RunAll();
+            StringOperations.AB01.RunAll();
         }
     }
 }
