@@ -1,6 +1,4 @@
-﻿using System.Linq;
-using System.Text;
-using Util;
+﻿
 
 namespace CSharp
 {
@@ -36,7 +34,9 @@ namespace CSharp
             //LEK.Three.RunAll();
             //ExtraTaskSolutions.Sokoban.Run_();
             //StringOperations.ExamTasks.RunAll();
-            StringOperations.AB01.RunAll();
+            //StringOperations.AB01.RunAll();
+            //StringOperations.Strings41.Run();
+            StringOperations.Strings43.Run();
         }
     }
 }
