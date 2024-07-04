@@ -162,5 +162,12 @@ static class Reader{
         Console.WriteLine();
         return input;
     }
+
+    public static string? ReadFile(string path){
+        if (File.Exists(path)){
+            return File.ReadAllText(path);
+        }
+        return null;
+    }
 }
 }

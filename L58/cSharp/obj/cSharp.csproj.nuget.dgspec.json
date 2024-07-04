@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/E_FI2/L58/cSharp/cSharp.csproj": {}
+    "/home/user/E_FI2/L58/cSharp/cSharp.csproj": {}
   },
   "projects": {
-    "/workspaces/E_FI2/L58/cSharp/cSharp.csproj": {
+    "/home/user/E_FI2/L58/cSharp/cSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/E_FI2/L58/cSharp/cSharp.csproj",
+        "projectUniqueName": "/home/user/E_FI2/L58/cSharp/cSharp.csproj",
         "projectName": "cSharp",
-        "projectPath": "/workspaces/E_FI2/L58/cSharp/cSharp.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/E_FI2/L58/cSharp/obj/",
+        "projectPath": "/home/user/E_FI2/L58/cSharp/cSharp.csproj",
+        "packagesPath": "/home/user/.nuget/packages/",
+        "outputPath": "/home/user/E_FI2/L58/cSharp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "/home/user/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
