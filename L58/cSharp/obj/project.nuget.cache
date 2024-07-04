@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "KE3szvqtfxtckbAFxqgwaeK0Q287uZmGt5VIkQPynRHQY8RELhmnzqo0MNxq2/ltiERCg3xjeBJeSnyyA7HfwA==",
+  "dgSpecHash": "cWGrnhmhW8Y=",
   "success": true,
   "projectFilePath": "/workspaces/E_FI2/L58/cSharp/cSharp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/codespace/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.netcore.app.host.linux-x64/7.0.20/microsoft.netcore.app.host.linux-x64.7.0.20.nupkg.sha512"
+  ],
   "logs": []
 }
