@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+</drone_modelle>
+    <modell>
+        <modell_id>273</modell_id>
+        <bezeichnung>TF-Y84 Oktokopter Drohne</bezeichnung>
+        <max_flughoehe>5000</max_flughoehe>
+        <anzahl_arme>8</anzahl_arme>
+        <nutzlast>12</nutzlast>
+    </modell>
+</drone_modelle>

@@ -43,3 +43,17 @@
 /workspaces/E_FI2/L58/cSharp/obj/Debug/net7.0/cSharp.genruntimeconfig.cache
 /workspaces/E_FI2/L58/cSharp/obj/Debug/net7.0/ref/cSharp.dll
 /workspaces/E_FI2/L58/cSharp/obj/Debug/net7.0/cSharp.sourcelink.json
+/home/user/E_FI2/L58/cSharp/bin/Debug/net7.0/cSharp
+/home/user/E_FI2/L58/cSharp/bin/Debug/net7.0/cSharp.deps.json
+/home/user/E_FI2/L58/cSharp/bin/Debug/net7.0/cSharp.runtimeconfig.json
+/home/user/E_FI2/L58/cSharp/bin/Debug/net7.0/cSharp.dll
+/home/user/E_FI2/L58/cSharp/bin/Debug/net7.0/cSharp.pdb
+/home/user/E_FI2/L58/cSharp/obj/Debug/net7.0/cSharp.GeneratedMSBuildEditorConfig.editorconfig
+/home/user/E_FI2/L58/cSharp/obj/Debug/net7.0/cSharp.AssemblyInfoInputs.cache
+/home/user/E_FI2/L58/cSharp/obj/Debug/net7.0/cSharp.AssemblyInfo.cs
+/home/user/E_FI2/L58/cSharp/obj/Debug/net7.0/cSharp.csproj.CoreCompileInputs.cache
+/home/user/E_FI2/L58/cSharp/obj/Debug/net7.0/cSharp.dll
+/home/user/E_FI2/L58/cSharp/obj/Debug/net7.0/refint/cSharp.dll
+/home/user/E_FI2/L58/cSharp/obj/Debug/net7.0/cSharp.pdb
+/home/user/E_FI2/L58/cSharp/obj/Debug/net7.0/cSharp.genruntimeconfig.cache
+/home/user/E_FI2/L58/cSharp/obj/Debug/net7.0/ref/cSharp.dll

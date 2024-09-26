@@ -14,7 +14,17 @@ namespace DataFiles
             return default;
         }
 
-        public static string GetValueOfXML<T>(string xml, string key){
+        public static void WriteJson<T>(string path, T obj){
+            string json = JsonSerializer.Serialize(obj);
+            File.WriteAllText(path, json);
+        }
+
+        public static string? GetValueOfXML(this string xml, string key){
+            //
+            return "";
+        }
+
+        public static string? GetValueOfCSV(this string csv, int row, int col){
             //
             return "";
         }

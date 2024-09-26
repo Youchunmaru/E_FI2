@@ -1,0 +1,9 @@
+[
+    {
+        "modell_id": 273,
+        "bezeichnung": "TF-Y84 Oktokopter Drohne",
+        "max_flughoehe": 5000,
+        "anzahl_arme": 8,
+        "nutzlast": 12
+    }
+]

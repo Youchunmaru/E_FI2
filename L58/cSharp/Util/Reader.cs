@@ -81,6 +81,20 @@ static class Reader{
     }
     /**
     <summary>
+    Reads the input and converts it to the specified <see cref="INumber"/> type.
+    </summary>
+    <typeparam name="T">an <see cref="INumber"/> type</typeparam>
+    <returns> parsed input or 0</returns>
+    */
+    public static T DefaultNumericRead<T>() where T: INumber<T>{
+        if (!T.TryParse(Read(), null, out T t))
+        {
+            return T.Zero;
+        }
+        return t;
+    }
+    /**
+    <summary>
     Prints <paramref name="msg"/> before reading line.
     Reads the input and converts it to the specified <see cref="INumber"/> type.
     </summary>
@@ -91,6 +105,18 @@ static class Reader{
     */
     public static T TryNumericRead<T>(String msg) where T: INumber<T> {
         return MsgPrinter<T>(msg,TryNumericRead<T>);
+    }
+    /**
+    <summary>
+    Prints <paramref name="msg"/> before reading line.
+    Reads the input and converts it to the specified <see cref="INumber"/> type.
+    </summary>
+    <param name="msg">a text that lets the user know what to input</param>
+    <typeparam name="T">an <see cref="INumber"/> type</typeparam>
+    <returns> parsed input or 0</returns>
+    */
+    public static T DefaultNumericRead<T>(String msg) where T: INumber<T> {
+        return MsgPrinter<T>(msg,DefaultNumericRead<T>);
     }
     /**
     <summary>

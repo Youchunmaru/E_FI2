@@ -36,7 +36,8 @@ namespace CSharp
             //StringOperations.ExamTasks.RunAll();
             //StringOperations.AB01.RunAll();
             //StringOperations.Strings41.Run();
-            StringOperations.Strings43.Run();
+            //StringOperations.Strings43.Run();
+            DataFiles.TaskFiles86.RunAll();
         }
     }
 }
